@@ -1,20 +1,28 @@
+bobody {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
 #vung1 {
-    background-color: blue; 
-    color: white;
-    padding: 10px;
-    margin-bottom: 5px;
+    background-color: blue;
+    color: yellow;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 2px solid orange;
 }
 
 #vung2 {
     background-color: yellow;
-    padding: 10px;
-    margin-bottom: 5px;
+    color: red;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 2px solid blue;
 }
 
 #vung3 {
-    background-color: red;
-    color: white;
-    padding: 10px;
+    background-color: lightcoral;
+    color: white; 
+    padding: 15px;
+    border: 2px solid red;
 }
-    margin: 5px 0;
 }
