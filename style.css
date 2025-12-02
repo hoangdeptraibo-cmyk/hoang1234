@@ -4,7 +4,10 @@ div {
     padding: 20px; 
     border-style: double; 
     border-width: 8px; 
-    text-align: left; 
+    
+    /* THAY ĐỔI TẠI ĐÂY: Căn giữa văn bản và hình ảnh */
+    text-align: center; 
+    
     font-family: 'Verdana', sans-serif; 
     border-radius: 10px; 
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
