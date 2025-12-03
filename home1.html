@@ -1,28 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <title>Home 1</title>
-    <link rel="stylesheet" href="style.css"> 
+    <meta charset="UTF-8">
+    <title>Trang Chủ - Bản Mới</title>
+    <link rel="stylesheet" href="main.css"> <style>
+        /* Thêm style cơ bản để dễ hình dung, thường nên để trong main.css */
+        .container { 
+            width: 80%; 
+            margin: 0 auto; 
+            font-family: Arial, sans-serif;
+        }
+        .header-section, .content-section, .footer-section {
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+        }
+        .main-nav { 
+            background-color: #f0f0f0; 
+            padding: 10px;
+        }
+        .main-nav a {
+            margin-right: 15px;
+            text-decoration: none;
+        }
+        .score-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        .score-table th, .score-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
 </head>
 <body>
+    <div class="container">
+        
+        <header class="header-section">
+            <nav class="main-nav">
+                <a href="/home">Trang chủ</a>
+                <a href="/about">Giới thiệu</a>
+                <a href="/services">Dịch vụ</a>
+            </nav>
+            <figure>
+                <img src="background-image-header.jpg" alt="Ảnh minh họa" style="width: 50px; height: auto;">
+                <figcaption>Ảnh đại diện khu vực tiêu đề</figcaption>
+            </figure>
+        </header>
 
-    <div id="vung1">
-        <p>Thanh điều hướng</p> 
-        <p>
-            <img src="77676a98eedb618538ca (1).jpg" alt="A nice picture">
-        </p>
-    </div>
+        <main class="content-section">
+            <h1>Phần Nội Dung Chính</h1>
+            <p>Đây là khu vực hiển thị các thông tin quan trọng của trang web.</p>
+            
+            <h2>Bảng Kết Quả Học Tập</h2>
+            <table class="score-table">
+                <thead>
+                    <tr>
+                        <th>Môn học</th>
+                        <th>Điểm Giữa Kì (50%)</th>
+                        <th>Điểm Cuối Kì (50%)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Toán Cao Cấp</td>
+                        <td>5.0</td>
+                        <td>5.0</td>
+                    </tr>
+                    <tr>
+                        <td>Văn Học Cổ Điển</td>
+                        <td>5.0</td>
+                        <td>5.0</td>
+                    </tr>
+                    <tr>
+                        <td>Ngoại Ngữ (English)</td>
+                        <td>5.0</td>
+                        <td>5.0</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <section>
+                <h3>Các Mục Khác</h3>
+                <p>Nội dung phụ trợ được trình bày trong section.</p>
+            </section>
+        </main>
 
-    <div id="vung2">
-        <p>Vùng nội dung</p> 
-        <p>Nội dung chi tiết</p> 
-    </div>
+        <footer class="footer-section">
+            <div class="info-footer">
+                <p>&copy; 2025 Bản quyền thuộc về Web Developer.</p>
+                <p>Liên hệ: info@example.com</p>
+            </div>
+        </footer>
 
-    <div id="vung3">
-        <p>Vùng chân trang</p> 
-        <p>Nội dung chân trang</p> 
-    </div>
-
+    </div>
 </body>
 </html>
