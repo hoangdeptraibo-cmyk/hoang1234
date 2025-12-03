@@ -1,58 +1,37 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <title>Trang Chủ Đồng Bộ</title>
-    <link rel="stylesheet" href="style.css"> 
-</head>
-<body>
+div {
+    width: 70%; 
+    margin: 30px auto; 
+    padding: 20px; 
+    border-style: double; 
+    border-width: 8px; 
     
-    <div id="vung1">
-        <div class="nav-links">
-            <a href="#">Trang chủ</a>
-            <a href="#">Thông tin</a>
-            <a href="#">Dịch vụ</a>
-        </div>
-        <img src="istockphoto-893660690-1024x1024.jpg" alt="Ảnh nền" class="vung-image">
-    </div>
+    /* THAY ĐỔI TẠI ĐÂY: Căn giữa văn bản và hình ảnh */
+    text-align: center; 
+    
+    font-family: 'Verdana', sans-serif; 
+    border-radius: 10px; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
+}
 
-    <div id="vung2">
-        <p>Vùng nội dung</p>
-        <h2>Bảng Điểm Môn Học</h2>
-        <table border="1">
-            <thead>
-                <tr>
-                    <th>Môn học</th>
-                    <th>Điểm giữa kỳ</th>
-                    <th>Điểm cuối kỳ</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Toán</td>
-                    <td>5.0</td>
-                    <td>5.0</td>
-                </tr>
-                <tr>
-                    <td>Văn</td>
-                    <td>5.0</td>
-                    <td>5.0</td>
-                </tr>
-                <tr>
-                    <td>Tiếng Anh</td>
-                    <td>5.0</td>
-                    <td>5.0</td>
-                </tr>
-            </tbody>
-        </table>
-        <p>Một số nội dung</p>
-    </div>
+#vung1 {
+    border-color: #007bff; 
+    background-color: #f8f9fa; 
+}
 
-    <div id="vung3">
-        <div class="vung_con">
-            <p>Vùng chân trang / Footer</p>
-            <p>Nội dung chân trang</p>
-        </div>
-    </div>
-</body>
-</html>
+#vung2 {
+    border-color: #28a745; 
+    background-color: #f8f9fa; 
+}
+
+#vung3 {
+    border-color: #dc3545; 
+    background-color: #f8f9fa; 
+}
+
+.vung-image {
+    max-width: 90%; 
+    height: auto; 
+    margin-top: 15px; 
+    border: 3px dotted #6c757d; 
+    border-radius: 5px;
+}
