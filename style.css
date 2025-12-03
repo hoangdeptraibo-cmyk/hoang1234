@@ -1,100 +1,58 @@
-:root {
-    --color-primary: #0000ff;
-    --color-secondary: #008000;
-    --color-accent: #d1c4e9;
-    --color-text-light: #ffff00;
-    --color-border-1: #ff0000;
-    --color-border-2: #ffc0cb;
-    --color-border-3: #000000;
-}
-
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 25px;
-    background-color: #f4f4f4;
-}
-
-#vung1 {
-    display: flex;
-    flex-direction: column; 
-    align-items: center; 
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Trang Chủ Đồng Bộ</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
     
-    background-color: var(--color-primary); 
-    color: var(--color-text-light); 
-    border: 20px solid var(--color-border-1); 
-    
-    padding: 20px;
-    margin-bottom: 20px;
-    box-sizing: border-box; 
-    border-radius: 10px;
-}
+    <div id="vung1">
+        <div class="nav-links">
+            <a href="#">Trang chủ</a>
+            <a href="#">Thông tin</a>
+            <a href="#">Dịch vụ</a>
+        </div>
+        <img src="istockphoto-893660690-1024x1024.jpg" alt="Ảnh nền" class="vung-image">
+    </div>
 
-.nav-links {
-    margin-bottom: 10px;
-}
+    <div id="vung2">
+        <p>Vùng nội dung</p>
+        <h2>Bảng Điểm Môn Học</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Môn học</th>
+                    <th>Điểm giữa kỳ</th>
+                    <th>Điểm cuối kỳ</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Toán</td>
+                    <td>5.0</td>
+                    <td>5.0</td>
+                </tr>
+                <tr>
+                    <td>Văn</td>
+                    <td>5.0</td>
+                    <td>5.0</td>
+                </tr>
+                <tr>
+                    <td>Tiếng Anh</td>
+                    <td>5.0</td>
+                    <td>5.0</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Một số nội dung</p>
+    </div>
 
-.nav-links a {
-    color: var(--color-text-light);
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-.nav-links a:hover {
-    color: #ffcc00;
-}
-
-#vung2 {
-    background-color: var(--color-secondary); 
-    color: var(--color-text-light); 
-    border: 70px solid var(--color-border-2); 
-    
-    padding: 30px;
-    margin-bottom: 20px;
-    box-sizing: border-box;
-    border-radius: 8px;
-}
-
-#vung2 h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-#vung2 table {
-    width: 80%;
-    margin: 20px auto;
-    border-collapse: collapse;
-    background-color: #38c172;
-    color: white;
-}
-
-#vung2 th, #vung2 td {
-    border: 1px solid #c9f7d2;
-    padding: 12px;
-    text-align: center;
-}
-
-#vung2 thead {
-    background-color: #0c7a36;
-}
-
-#vung2 tbody tr:nth-child(even) {
-    background-color: #2eb868;
-}
-
-#vung3 {
-    background-color: var(--color-accent); 
-    color: darkorange; 
-    border: 20px solid var(--color-border-3); 
-    
-    padding: 15px;
-    box-sizing: border-box;
-    border-radius: 10px;
-}
-
-.vung_con {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    text
+    <div id="vung3">
+        <div class="vung_con">
+            <p>Vùng chân trang / Footer</p>
+            <p>Nội dung chân trang</p>
+        </div>
+    </div>
+</body>
+</html>
