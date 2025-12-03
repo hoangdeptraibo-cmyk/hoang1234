@@ -5,9 +5,6 @@ div {
     border-style: double; 
     border-width: 8px; 
     
-    /* THAY ĐỔI TẠI ĐÂY: Căn giữa văn bản và hình ảnh */
-    text-align: center; 
-    
     font-family: 'Verdana', sans-serif; 
     border-radius: 10px; 
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
@@ -16,16 +13,42 @@ div {
 #vung1 {
     border-color: #007bff; 
     background-color: #f8f9fa; 
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+#vung1 .nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+    padding: 0;
+    margin-top: 0; 
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+
+#vung1 a {
+    text-decoration: none;
+    color: #007bff;
+    padding: 5px 10px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
 }
 
 #vung2 {
     border-color: #28a745; 
     background-color: #f8f9fa; 
+    text-align: center;
 }
 
 #vung3 {
     border-color: #dc3545; 
     background-color: #f8f9fa; 
+    text-align: center;
 }
 
 .vung-image {
@@ -34,4 +57,9 @@ div {
     margin-top: 15px; 
     border: 3px dotted #6c757d; 
     border-radius: 5px;
+}
+
+#vung1 img {
+    max-width: 150px;
+    height: auto;
 }
