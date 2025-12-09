@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Home 1</title>
+    <title>Home 1 - Biểu mẫu</title>
     <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
@@ -17,14 +17,53 @@
     </div>
 
     <div id="vung2">
-        <p>Vùng nội dung</p> 
-        <p>Nội dung chi tiết</p> 
-        <img src="Screenshot 2025-12-03 150524.png" alt="Bảng điểm học sinh" class="vung-image">
+        <h2>📝 Biểu mẫu Đăng ký Thông tin</h2>
+        
+        <form action="/submit-form" method="POST">
+            
+            <div class="form-group">
+                <label for="ten">Tên:</label>
+                <input type="text" id="ten" name="ten" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="quocgia">Quốc gia:</label>
+                <select id="quocgia" name="quocgia">
+                    <option value="vietnam">Việt Nam</option>
+                    <option value="usa">Hoa Kỳ</option>
+                    <option value="japan">Nhật Bản</option>
+                    <option value="khac">Khác</option>
+                </select>
+            </div>
+            
+            <div class="form-group-checkbox">
+                <p>Sở Thích:</p>
+                <input type="checkbox" id="doc_sach" name="so_thich[]" value="doc_sach">
+                <label for="doc_sach">Đọc sách</label>
+                
+                <input type="checkbox" id="nghe_nhac" name="so_thich[]" value="nghe_nhac">
+                <label for="nghe_nhac">Nghe nhạc</label>
+            </div>
+            
+            <hr>
+            
+            <div class="form-actions">
+                <button type="submit">Đăng nhập</button>
+                <button type="reset">Thoát</button>
+            </div>
+            
+        </form>
+        
     </div>
 
     <div id="vung3">
         <p>Vùng chân trang</p> 
-        <p>Nội dung chân trang</p> 
+        <p>Nội dung chân trang &copy; 2025</p> 
     </div>
 
 </body>
