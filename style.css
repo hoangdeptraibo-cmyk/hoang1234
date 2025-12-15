@@ -26,11 +26,11 @@ body {
   padding: 10px;
   text-align: center;
   background: #ccc;
-  clear: both;
+  clear: both; /* Đây là lý do footer không bị trôi lên */
 }
 
 .column {
-  float: left;
+  float: left; /* ĐÂY LÀ DÒNG TẠO BỐ CỤC CỘT */
   width: 33.33%;
   padding: 20px;
   text-align: center;
@@ -40,7 +40,7 @@ body {
 .row:after {
   content: "";
   display: table;
-  clear: both;
+  clear: both; /* Đây là lý do các cột không bị chồng chéo */
 }
 
 @media screen and (max-width: 600px) {
