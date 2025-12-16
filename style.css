@@ -1,45 +1,61 @@
-/* style.css */
+/*
+   FILE: style.css
+   Mục đích: Tạo giao diện sidenav cố định (fixed) và full-height.
+*/
 
-/* 1. Thiết lập cơ bản */
-* {
-    box-sizing: border-box; /* Quan trọng để padding/border không phá vỡ 33.33% */
+/* --- 1. Thiết lập cơ bản --- */
+body {
+    margin: 0; /* Xóa margin mặc định */
+    font-family: Arial, sans-serif;
+    line-height: 1.5; /* Điều chỉnh khoảng cách dòng */
 }
 
-/* Định dạng Header và Footer */
-.header, .footer {
-    background-color: #e5e5e5;
-    padding: 20px;
-    text-align: center;
-    border: 1px solid #ccc;
+/* --- 2. Định dạng cho Thanh Điều hướng Bên (Sidenav) --- */
+.sidenav {
+    height: 100%; /* Chiều cao đầy đủ của viewport */
+    width: 200px; /* Chiều rộng cố định */
+    position: fixed; /* Cố định vị trí, không cuộn theo trang */
+    z-index: 1; 
+    top: 0; 
+    left: 0; 
+    background-color: #000; /* Màu nền đen tuyệt đối */
+    overflow-x: hidden; 
+    padding-top: 20px; /* Khoảng đệm trên */
+    box-sizing: border-box; 
 }
 
-.header h2 {
-    font-size: 48px;
-    padding: 30px 0;
+/* Định dạng cho các liên kết (Link) trong sidenav */
+.sidenav a {
+    /* Điều chỉnh padding để giống với ảnh: khoảng đệm trên/dưới lớn hơn */
+    padding: 15px 16px; 
+    text-decoration: none; 
+    font-size: 18px; 
+    color: #f1f1f1; /* Màu chữ trắng/sáng */
+    display: block; 
+    transition: 0.3s;
 }
 
-/* 2. Thiết lập cột và Float */
-.column {
-    float: left;
-    width: 33.33%; 
-    padding: 15px;
-    /* Chỉ dùng background-color ở đây thay vì HTML */
-    background-color: #bbb; 
-    border: 1px solid #999;
-    min-height: 150px; 
-    text-align: center;
+/* Hiệu ứng hover cho các liên kết */
+.sidenav a:hover {
+    color: #fff;
+    /* Có thể thêm background-color: #333; nếu muốn hiệu ứng hover màu nền */
 }
 
-/* 2b. Clearfix cho container (rất quan trọng khi dùng float) */
-.row::after {
-    content: "";
-    display: table;
-    clear: both;
+/* --- 3. Định dạng cho Khu vực Nội dung Chính (Content) --- */
+.content {
+    /* Đẩy nội dung chính sang phải bằng với chiều rộng của sidenav */
+    margin-left: 200px;
+    padding: 1px 20px; /* Khoảng đệm xung quanh nội dung */
 }
 
-/* 3. Responsive Media Query */
-@media screen and (max-width: 600px) {
-    .column {
-        width: 100%; /* Trên màn hình nhỏ, cột chiếm 100% */
-    }
+/* Định dạng cho tiêu đề và đoạn văn trong nội dung */
+.content h2 {
+    color: #333; 
+    font-size: 32px; /* Điều chỉnh kích thước tiêu đề */
+    margin-top: 40px; /* Khoảng cách từ đỉnh trang */
+}
+
+.content p {
+    color: #555;
+    font-size: 16px;
 }
