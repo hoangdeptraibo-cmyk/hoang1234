@@ -1,34 +1,30 @@
-/* Thiết lập cơ bản */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0; /* Màu nền tổng thể, hơi nhạt */
+    background-color: #f0f0f0;
     color: #333;
 }
 
-/* Thanh điều hướng (Topnav) */
 .topnav {
     overflow: hidden;
-    background-color: #333; /* Màu nền đen đậm */
+    background-color: #333;
     color: white;
-    padding: 0; /* Loại bỏ padding để các link dính sát vào nhau */
-    display: flex; /* Dùng flexbox để căn chỉnh các link */
+    padding: 0;
+    display: flex;
     align-items: stretch;
 }
 
 .topnav a {
-    float: left;
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px; /* Padding cho các link */
+    padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-    border-right: 1px solid #444; /* Thêm đường viền nhỏ nếu cần */
+    border-right: 1px solid #444;
 }
 
-/* Loại bỏ border cho link cuối cùng nếu muốn */
 .topnav a:last-child {
     border-right: none;
 }
@@ -38,13 +34,11 @@ body {
     color: white;
 }
 
-/* Khu vực nội dung chính (Content) */
 .content {
-    /* Đảm bảo nội dung chiếm hết chiều rộng giữa topnav và footer */
-    min-height: calc(100vh - 51px - 40px); /* Ví dụ: 100vh trừ chiều cao topnav và footer */
-    background-color: #e0e0e0; /* Màu nền xám nhạt */
-    padding: 20px; /* Padding bên trong content */
-    border-bottom: 1px solid #ccc; /* Đường viền nhẹ ngăn cách với footer */
+    min-height: calc(100vh - 51px - 40px);
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
 }
 
 .content h1 {
@@ -60,12 +54,11 @@ body {
     margin-top: 0;
 }
 
-/* Khu vực chân trang (Footer) */
 .footer {
-    background-color: #cccccc; /* Màu nền xám nhạt hơn content một chút */
+    background-color: #cccccc;
     color: #333;
-    text-align: left; /* Căn lề trái theo hình */
-    padding: 10px 20px; /* Padding cho footer */
+    text-align: left;
+    padding: 10px 20px;
     font-size: 14px;
     border-top: 1px solid #bbb;
 }
