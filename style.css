@@ -1,61 +1,71 @@
-/*
-   FILE: style.css
-   Mục đích: Tạo giao diện sidenav cố định (fixed) và full-height.
-*/
-
-/* --- 1. Thiết lập cơ bản --- */
+/* Thiết lập cơ bản */
 body {
-    margin: 0; /* Xóa margin mặc định */
     font-family: Arial, sans-serif;
-    line-height: 1.5; /* Điều chỉnh khoảng cách dòng */
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Màu nền tổng thể, hơi nhạt */
+    color: #333;
 }
 
-/* --- 2. Định dạng cho Thanh Điều hướng Bên (Sidenav) --- */
-.sidenav {
-    height: 100%; /* Chiều cao đầy đủ của viewport */
-    width: 200px; /* Chiều rộng cố định */
-    position: fixed; /* Cố định vị trí, không cuộn theo trang */
-    z-index: 1; 
-    top: 0; 
-    left: 0; 
-    background-color: #000; /* Màu nền đen tuyệt đối */
-    overflow-x: hidden; 
-    padding-top: 20px; /* Khoảng đệm trên */
-    box-sizing: border-box; 
+/* Thanh điều hướng (Topnav) */
+.topnav {
+    overflow: hidden;
+    background-color: #333; /* Màu nền đen đậm */
+    color: white;
+    padding: 0; /* Loại bỏ padding để các link dính sát vào nhau */
+    display: flex; /* Dùng flexbox để căn chỉnh các link */
+    align-items: stretch;
 }
 
-/* Định dạng cho các liên kết (Link) trong sidenav */
-.sidenav a {
-    /* Điều chỉnh padding để giống với ảnh: khoảng đệm trên/dưới lớn hơn */
-    padding: 15px 16px; 
-    text-decoration: none; 
-    font-size: 18px; 
-    color: #f1f1f1; /* Màu chữ trắng/sáng */
-    display: block; 
-    transition: 0.3s;
+.topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px; /* Padding cho các link */
+    text-decoration: none;
+    font-size: 17px;
+    border-right: 1px solid #444; /* Thêm đường viền nhỏ nếu cần */
 }
 
-/* Hiệu ứng hover cho các liên kết */
-.sidenav a:hover {
-    color: #fff;
-    /* Có thể thêm background-color: #333; nếu muốn hiệu ứng hover màu nền */
+/* Loại bỏ border cho link cuối cùng nếu muốn */
+.topnav a:last-child {
+    border-right: none;
 }
 
-/* --- 3. Định dạng cho Khu vực Nội dung Chính (Content) --- */
+.topnav a:hover {
+    background-color: #575757;
+    color: white;
+}
+
+/* Khu vực nội dung chính (Content) */
 .content {
-    /* Đẩy nội dung chính sang phải bằng với chiều rộng của sidenav */
-    margin-left: 200px;
-    padding: 1px 20px; /* Khoảng đệm xung quanh nội dung */
+    /* Đảm bảo nội dung chiếm hết chiều rộng giữa topnav và footer */
+    min-height: calc(100vh - 51px - 40px); /* Ví dụ: 100vh trừ chiều cao topnav và footer */
+    background-color: #e0e0e0; /* Màu nền xám nhạt */
+    padding: 20px; /* Padding bên trong content */
+    border-bottom: 1px solid #ccc; /* Đường viền nhẹ ngăn cách với footer */
 }
 
-/* Định dạng cho tiêu đề và đoạn văn trong nội dung */
-.content h2 {
-    color: #333; 
-    font-size: 32px; /* Điều chỉnh kích thước tiêu đề */
-    margin-top: 40px; /* Khoảng cách từ đỉnh trang */
+.content h1 {
+    font-size: 32px;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
 .content p {
-    color: #555;
     font-size: 16px;
+    color: #555;
+    margin-top: 0;
+}
+
+/* Khu vực chân trang (Footer) */
+.footer {
+    background-color: #cccccc; /* Màu nền xám nhạt hơn content một chút */
+    color: #333;
+    text-align: left; /* Căn lề trái theo hình */
+    padding: 10px 20px; /* Padding cho footer */
+    font-size: 14px;
+    border-top: 1px solid #bbb;
 }
