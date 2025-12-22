@@ -18,7 +18,6 @@ body {
   padding: 0 4px;
 }
 
-/* 4 columns for desktop (25% each) */
 .column {
   flex: 25%;
   max-width: 25%;
@@ -29,10 +28,12 @@ body {
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
+  /* Fix height and aspect ratio */
+  aspect-ratio: 1 / 1; 
+  object-fit: cover;
   border-radius: 4px;
 }
 
-/* 2 columns for tablets (50% each) */
 @media screen and (max-width: 800px) {
   .column {
     flex: 50%;
@@ -40,7 +41,6 @@ body {
   }
 }
 
-/* 1 column for mobile (100%) */
 @media screen and (max-width: 600px) {
   .column {
     flex: 100%;
