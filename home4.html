@@ -2,11 +2,51 @@
 <html>
 <head>
 <style>
-  /* Bạn nhớ copy phần CSS mình đã gửi ở câu trả lời trước vào đây để nó hiện đẹp nhé */
-  * { box-sizing: border-box; }
-  .container { display: flex; flex-wrap: wrap; }
-  .column { flex: 25%; max-width: 25%; padding: 5px; }
-  .header { text-align: center; font-family: Arial; }
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .header {
+    text-align: center;
+    padding: 32px;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
 </style>
 </head>
 <body>
@@ -17,23 +57,21 @@
 </div>
 
 <div class="container"> 
-  
   <div class="column">
-    <img src="e783a0040620897ed031jpg" style="width:100%" alt="Hinh 1">
+    <img src="e783a0040620897ed031.jpg" alt="Hinh 1">
   </div>
   
   <div class="column">
-    <img src="3d88bb081d2c9272cb3d.jpg" style="width:100%" alt="Hinh 2">
+    <img src="3d88bb081d2c9272cb3d.jpg" alt="Hinh 2">
   </div> 
    
   <div class="column">
-    <img src="10f99579335dbc03e54c.jpg" style="width:100%" alt="Hinh 3">
+    <img src="10f99579335dbc03e54c.jpg" alt="Hinh 3">
   </div>
   
   <div class="column">
-    <img src="8e880608a02c2f72763d.jpg" style="width:100%" alt="Hinh 4">
+    <img src="8e880608a02c2f72763d.jpg" alt="Hinh 4">
   </div>
-
 </div>
 
 </body>
