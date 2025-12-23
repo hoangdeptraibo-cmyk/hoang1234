@@ -1,29 +1,17 @@
-<style>
+/* The parent container */
 .day {
-  display: flex;
-  border: 4px solid blue;
-  padding: 3px;
-  width: 100%;
-  box-sizing: border-box;
+    display: flex;
+    background-color: #2196F3; /* Blue background */
+    padding: 10px;
 }
 
-.day div {
-  flex-grow: 1;
-  flex-basis: 0;
-  
-  background-color: #f0f0f0; /* <-- Đảm bảo dòng này tồn tại */
-  color: black;
-  padding: 15px 10px;
-  text-align: center;
-  font-weight: bold;
-  
-  margin: 0 3px;
+/* The flex items */
+.day > div {
+    background-color: #f1f1f1; /* Light grey background */
+    margin: 10px;
+    padding: 20px;
+    font-size: 25px;
+    flex: 1;                 /* Ensures items grow equally */
+    text-align: center;      /* Centers the text */
+    font-family: Arial, sans-serif;
 }
-
-.day div:first-child {
-  margin-left: 0;
-}
-.day div:last-child {
-  margin-right: 0;
-}
-</style>
