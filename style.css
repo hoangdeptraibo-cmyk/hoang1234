@@ -1,27 +1,23 @@
-/* Cấu hình chung cho trang */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f1f1f1; /* Màu nền xám nhẹ cho toàn trang */
+    background-color: #f1f1f1;
     display: flex;
     justify-content: center;
     padding: 20px;
 }
 
-/* Khung chính của bài viết */
 .card {
     background-color: white;
     width: 100%;
     max-width: 800px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Tạo hiệu ứng đổ bóng */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-/* Hình ảnh */
 .card-img {
     width: 100%;
     display: block;
 }
 
-/* Nội dung bên trong khung */
 .card-content {
     padding: 16px;
 }
@@ -47,7 +43,6 @@ body {
     margin-bottom: 30px;
 }
 
-/* Phần nút bấm và bình luận */
 .card-footer {
     display: flex;
     justify-content: space-between;
@@ -67,7 +62,6 @@ body {
     background-color: #ccc;
 }
 
-/* Phần bình luận */
 .comments {
     font-weight: bold;
 }
