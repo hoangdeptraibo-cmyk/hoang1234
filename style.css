@@ -1,33 +1,55 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Học trực tuyến Công nghệ thông tin</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
 
-    <div class="container">
-        <nav class="sidebar">
-            <ul>
-                <li class="active">Trang chủ</li>
-                <li>Khóa học</li>
-                <li>Diễn đàn</li>
-                <li>Liên hệ</li>
-            </ul>
-        </nav>
+.container {
+    display: flex;
+    border: 1px solid #000;
+    width: 100%;
+    min-height: 100vh;
+}
 
-        <main class="content">
-            <h1>Học trực tuyến Công nghệ thông tin</h1>
-            <h3>Các khóa học:</h3>
-            <ol>
-                <li>Lập trình cơ bản</li>
-                <li>Cấu trúc dữ liệu</li>
-                <li>Thiết kế web</li>
-            </ol>
-        </main>
-    </div>
+.sidebar {
+    width: 30%;
+    background-color: #f0f0f0;
+    border-right: 1px solid #000;
+}
 
-</body>
-</html>
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    padding: 15px 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.sidebar li.active {
+    background-color: #FFC0CB;
+    color: #000;
+    font-weight: bold;
+}
+
+.content {
+    width: 70%;
+    padding: 30px;
+}
+
+.content h1 {
+    margin-bottom: 20px;
+}
+
+.content h3 {
+    margin-bottom: 10px;
+}
+
+.content ol {
+    margin-left: 25px;
+}
+
+.content li {
+    margin-bottom: 8px;
+}
